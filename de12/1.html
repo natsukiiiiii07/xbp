@@ -8,33 +8,66 @@
     <!-- h1.htmlからある行をコピペしてくればOK -->
 </head>
 <body>
-    <h1>見出し</h1>
+    <h1>第一回のまとめ</h1>
     <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
     <div>
-         <!-- ①↓に文字を書いてみよう -->
-ああああああ<br>
-12345678<br>
-いいいいいい
-         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
-画像を表示(30%)<br>
-<img src="./images/testimage.png" width="30%"><br>
-画像を表示(40%)<br>
-<img src="./images/testimage.png"width="40%"><br>
-<img src="./images/20260517_142752.jpg"width="40%"><br>    
-<!-- ③↓に箇条書きをしてみよう -->>
-  <ol>
- <li>k5</li>
- <li>98</li>
- </ol>
- <ul>
-<li>あああああ</li>
-<li>いいいいいいい</li>
+<h1>Gitとは</h1>
+Gitとはファイルのバージョン管理が簡単にできるツールのこと<br>
+バージョンというのはファイル（htmlファイルやcssファイルjsファイル etc...）を編集して更新した履歴のようなもの<br>
+つまり、バージョン管理 = 履歴の管理のこと<br>
+⇒誰が、どのファイルに、何を書き込んだのか、編集前とどう変わったのかなどをバージョン（履歴）として残しておき<br>
+それをいつでも確認し、戻したいバージョンまで戻すことも出来る<br>
+<br>
+
+<span style="font-weight: 600;">【メリット】</span>
+<ul><li>複数人で同じファイルを触っても上書きにならない</li>
+<li>誰がいつどのファイルにどんな編集をしたかが分かる</li>
+<li>以前のバージョンにファイルを戻せる = いつでもバックアップに復元できる</li>
 </ul>
-<!-- ④↓に外部リンクを作ってみよう -->>
-<a href="index.html">デザイン演習Ⅰ・Ⅱトップページ</a><br>
-<a href="./files/test.pdf"target="_blank">pdfファイル</a>
-<a href="../index.html">XBPトップページ</a><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VyKLQXOj0ts?si=K795Mln2n7j1L3tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<span style="font-size: 22px; font-weight: 600;">リポジトリについて</span><br>
+<br>
+リポジトリとはファイルや履歴を保存するためのストレージのことで簡単に言うと保管庫のようなもの<br>
+Gitにはリポジトリが2種類ある<br>
+ <ul>
+<li>リモートリポジトリ：インターネット上で変更履歴を共有・保存する場所</li>
+<li>ローカルリポジトリ：自分のパソコン内でGitの変更履歴を管理する場所</li>
+</ul>
+<h1>HTMLとは</h1>
+HTMLは HyperText Markup Language の略でwebページの構造を作るための言語のこと<br>
+ウェブページの土台を作るための言語でほとんどのwebページがこのHTMLを使って骨組みが作られている<br>
+<br>
+HTMLの基本構造として重要なのが「タグ」と「要素」<br>
+「タグ」とは文字（テキスト）に意味を与えてあげる印のようなもの<br>
+「要素」とはタグの種類を表す文字列のこと<br>
+基本的にHTMLのコードでは各要素のタグとそれに「/」を付けた終了タグで対象の文字列を囲む書き方が一般的<br>
+ただし、改行を意味する「br要素」や、画像を挿入する「img要素」など、終了タグを使わずに記述できる要素もある<br>
+
+<br>
+<span style="font-size: 22px; font-weight: 600;">HTMLのタグの種類</span><br>
+<ul>
+<li>h 見出し</li>
+<li>p 段落</li>
+<li>a リンクの挿入</li>
+<li>img 画像の表示</li>
+<li>li 箇条書き（点→ul 数字→ol）</li>
+</ul>
+✩これと合わせて覚えたいこと<br>
+CSS：HTMLで書かれた内容の見え方を色を付けたり文字の大きさを変更したりと装飾すること<br>
+<br>
+<span style="font-size: 22px; font-weight: 600;">実際にHTMLを使ってみる</span><br>
+画像を載せたい場合<br>
+　＜img src="写真のファイル名"width="表示したい倍率％"＞<br>
+<br>
+<img src="./images/nctwish_official_ef47318e1fb541939138f999fd19b05f.jpg"width="30%"><br>
+<br>
+リンクを載せたい場合<br>
+　＜a href="挿入したいリンク"＞表示される名前＜/a＞<br>
+<a href="https://www.nintendo.com/jp/character/zelda/index.html">ゼルダの伝説40周年</a><br>
+↑これを表示させるには下記を打つ<br>
+〈a href="https://www.nintendo.com/jp/character/zelda/index.html"〉ゼルダの伝説40周年</a><br>
+
+
  <title>なつきのページ</title>
 </div>
 </body>
